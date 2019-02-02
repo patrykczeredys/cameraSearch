@@ -96,20 +96,36 @@ function displayHeader {
 	echo "    !:!   :!:       :!:  !:!  :!:  !:!  :!:       :!:  !:!  " && sleep 0.080
 	echo ":::: ::    :: ::::  ::   :::  ::   :::   ::: :::  ::   :::  " && sleep 0.080
 	echo ":: : :    : :: ::    :   : :   :   : :   :: :: :   :   : :  " && sleep 0.040
-	echo -e $YELLOW"\t\tVersion: "$VERSION" By "$AUTHOR && sleep 1.25
+	echo -e $YELLOW"\t\tVersion: "$VERSION" By "$AUTHOR"" && sleep 1.30
 }
 function configure {
-	while true; do
-		echo -ne $GREEN"[?] Do you want to auto scan host y/n #> "$DEFAULT
-		read anw
-		case $anw in
-			'y') echo -e "\nadd to crone";break;;
-			'Y') echo -e "\nadd to crone";break;;
-			'n') echo -e "\ndon't add to crone";break;;
-			'N') echo -e "\ndon't add to crone";break;;
-			*) echo -e "\nUnknow option! Select again.";clear;;
-		esac
-	done
+	clear
+	initLogo
+	#echo -ne $RED"[?] Do you want to auto scan host with cronetab [Y/n] #> "$DEFAULT
+	echo -e $DEAFULT
+	read -r -p "Are you want to scan host automaticly with crone? Answer [Y/n] " response
+	response=${response,,}
+	if [[ "$response" =~ ^(yes|y|Y)$ ]]; then
+		echo "Add to crone"
+	elif [[ "$response" =~ ^(no|n|N)$ ]]; then
+		echo "Don't add to crone"
+	else
+		configure
+	fi
+	#---------- OLD METHOD TO CHECK IF USER WANT TO SEARCH AUTOMATICLY HOST -----------
+	#read -N1 autoscan
+	#autoscan=${autoscan:-"Y"}
+	
+	#if [ "$autoscan" = "Y" ] || [ "$autoscan" = "y" ]; then
+	#	echo "" > 
+	#elif [ "$autoscan" = "N" ] || [ "$autoscan" = "n" ]; then
+	#	echo "Don't use cronTab"
+	#else
+	#	clear
+	#	echo -e $RED"\nUnkown option. Please choose again!"$DEFAULT
+	#	read -n 1 -s -r -p "Press any key to continue"
+	#	configure
+	#fi
 }
 displayHeader
 configure
