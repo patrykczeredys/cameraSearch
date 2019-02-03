@@ -41,7 +41,7 @@ function initLogo() {
 }
 
 function CheckRequireTools {
-	echo -e $YELLOW"\n[*] Checking and instaling requires tools...\n"$DEFAULT
+	echo -e $YELLOW"\n[*] Checking requires tools...\n"$DEFAULT
 	if [ ! -d "hikka" ]; then 
 		echo -e $RED"[!] Hikka does not exist"
 		exit=1
@@ -51,7 +51,7 @@ function CheckRequireTools {
 	sleep 0.025
 	
 	if ! hash masscan 2>/dev/null; then
-		echo -e $RED"[!] Masscan is not installed"
+		echo -e $RED"[!] Masscan is not installed"$DEFAULT
 		exit=1
 	else
 		echo -e $GREEN"[*] Masscan is installed"$DEFAULT
@@ -59,7 +59,7 @@ function CheckRequireTools {
 	sleep 0.025
 	
 	if [ "$exit" = "1" ]; then
-		echo -e "\nYou should install require packed. To do that type: sudo ./install.sh"$DEFAULT
+		echo -e "\nYou should install require packed. To do that type: sudo ./installer.sh"$DEFAULT
 		exit 1
 	fi
 	sleep 1
