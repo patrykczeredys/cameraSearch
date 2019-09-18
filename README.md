@@ -7,7 +7,7 @@ This software automatically/manual scan hosts to search any camera in network us
 To get started scan with Camera Scan you must download repository by clicking download or by CLI to do that enter in your terminal:
 
 ```
-git clone https://github.com/patrykczeredys/cameraSearch.git
+$ git clone https://github.com/patrykczeredys/cameraSearch.git
 ```
 
 ### Installing
@@ -15,13 +15,13 @@ git clone https://github.com/patrykczeredys/cameraSearch.git
 If you have downloaded repository you must enter to directory 'cameraSearch'. Example:
 
 ```
-cd cameraSearch
+$ cd cameraSearch
 ```
 
 And you must firt install reqiured packed:
 
 ```
-sudo ./installer.sh
+$ sudo ./installer.sh
 ```
 
 ## Running
@@ -29,7 +29,7 @@ sudo ./installer.sh
 To run script you must write:
 
 ```
-sudo ./cameraSearch.sh
+$ sudo ./cameraSearch.sh
 ```
 
 ## Built With
