@@ -1,6 +1,6 @@
 # Camera Search
 
-This software automaticly/manual scan host to search any camera in network using masscan.
+This software automatically/manual scan hosts to search any camera in network using masscan.
 
 ## Getting Started
 
@@ -44,9 +44,7 @@ Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c6
 
 * **Patryk Czeredys** - *Initial work* - [2DPac](https://github.com/2DPac)
 
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
-
 ## License
 
-This project is licensed under the GNU 3.0 License - see the [LICENSE.md](LICENSE.md) file for details
+See the [LICENSE.md](LICENSE.md) file for details
 
