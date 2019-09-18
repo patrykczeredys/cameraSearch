@@ -7,7 +7,7 @@ This software automaticly/manual scan host to search any camera in network using
 To get started scan with Camera Scan you must download repository by clicking download or by CLI to do that enter in your terminal:
 
 ```
-git clone https://github.com/2DPac/cameraSearch.git
+git clone https://github.com/patrykczeredys/cameraSearch.git
 ```
 
 ### Installing
