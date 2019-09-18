@@ -40,7 +40,3 @@ $ sudo ./cameraSearch.sh
 
 * **Patryk Czeredys** - *Initial work* - [2DPac](https://github.com/2DPac)
 
-## License
-
-See the [LICENSE.md](LICENSE.md) file for details
-
