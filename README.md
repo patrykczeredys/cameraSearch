@@ -36,10 +36,6 @@ sudo ./cameraSearch.sh
 
 * [hikka](https://github.com/superhacker777/hikka) - Used to brute force cameras
 
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
 ## Authors
 
 * **Patryk Czeredys** - *Initial work* - [2DPac](https://github.com/2DPac)
